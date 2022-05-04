@@ -13,9 +13,7 @@ import {
  Footer,
 } from "./appStyled";
 
-const API = axios.create({
- baseURL: "https://git.heroku.com/api-curriculum-site.git",
-});
+const API = axios.create({ baseURL: process.env.REACT_APP_BASE_URL });
 
 function App() {
  const [portuguese, setPortuguese] = useState<boolean>(true);
