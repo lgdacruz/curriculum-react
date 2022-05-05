@@ -106,14 +106,18 @@ function App() {
     </section>
 
     <section>
-     <a href="https://github.com/lgdacruz">
+     <a href="https://github.com/lgdacruz" target="_blank" rel="noreferrer">
       <AiFillGithub size={30} />
       <p>GitHub</p>
      </a>
     </section>
 
     <section>
-     <a href="https://www.linkedin.com/in/luiz-s%C3%A9rgio-gomes-da-cruz/">
+     <a
+      href="https://www.linkedin.com/in/luiz-s%C3%A9rgio-gomes-da-cruz/"
+      target="_blank"
+      rel="noreferrer"
+     >
       <AiFillLinkedin size={30} />
       <p>Linkedin</p>
      </a>
