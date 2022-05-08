@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import { BsTwitch } from "react-icons/bs";
 import {
  ButtonLanguage,
  ContainerImage,
@@ -104,24 +105,48 @@ function App() {
       {portuguese ? "Sou desenvolvedor FullStack" : "I am a FullStack dev"}
      </p>
     </section>
+   </ContainerGeneric>
 
-    <section>
-     <a href="https://github.com/lgdacruz" target="_blank" rel="noreferrer">
-      <AiFillGithub size={30} />
-      <p>GitHub</p>
-     </a>
-    </section>
+   <ContainerGeneric>
+    <h2>Social</h2>
 
-    <section>
-     <a
-      href="https://www.linkedin.com/in/luiz-s%C3%A9rgio-gomes-da-cruz/"
-      target="_blank"
-      rel="noreferrer"
-     >
-      <AiFillLinkedin size={30} />
-      <p>Linkedin</p>
-     </a>
-    </section>
+    <div className="row">
+     <section>
+      <a href="https://github.com/lgdacruz" target="_blank" rel="noreferrer">
+       <AiFillGithub size={30} />
+       <p>GitHub</p>
+      </a>
+     </section>
+
+     <section>
+      <a
+       href="https://www.linkedin.com/in/luiz-s%C3%A9rgio-gomes-da-cruz/"
+       target="_blank"
+       rel="noreferrer"
+      >
+       <AiFillLinkedin size={30} />
+       <p>Linkedin</p>
+      </a>
+     </section>
+
+     <section>
+      <a href="https://www.twitch.tv/dacruzxz" target="_blank" rel="noreferrer">
+       <BsTwitch size={30} />
+       <p>Twitch</p>
+      </a>
+     </section>
+
+     <section>
+      <a
+       href="https://www.instagram.com/lgdacruz/"
+       target="_blank"
+       rel="noreferrer"
+      >
+       <AiFillInstagram size={30} />
+       <p>Instagram</p>
+      </a>
+     </section>
+    </div>
    </ContainerGeneric>
 
    <ContainerGeneric>

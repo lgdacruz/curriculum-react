@@ -54,8 +54,15 @@ export const ContainerGeneric = styled.div`
  margin: 3rem 0;
  padding: 5px;
  font-size: 1.2rem;
+ border-radius: 10px;
  :hover {
   box-shadow: 0px 10px 18px 10px #000;
+ }
+ .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
  }
  h2 {
   font-size: 2.5rem;
@@ -64,6 +71,9 @@ export const ContainerGeneric = styled.div`
  section {
   display: flex;
   flex-direction: row;
+  padding: 5px;
+  border-radius: 10px;
+
   p {
    margin: 0.5rem 5px;
   }
@@ -81,6 +91,13 @@ export const ContainerGeneric = styled.div`
    padding: 5px;
    border-radius: 10px;
    margin: 10px 0;
+   text-decoration: none;
+   :hover {
+    box-shadow: 0 0 50px ${theme.dark};
+   }
+   :visited {
+    background: ${theme.dark};
+   }
   }
   ul .macro {
    margin: 1rem 0;
